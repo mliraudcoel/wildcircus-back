@@ -12,7 +12,7 @@ app.use(cors({
   origin: 'http://localhost:3000',
 }));
 
-app.use('/', performanceRouter);
+app.use('/performances', performanceRouter);
 
 app.listen(port, (err) => {
   if (err) {
